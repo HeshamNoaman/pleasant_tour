@@ -1,0 +1,149 @@
+/*--- start style for main image---*/
+section.mainimg {
+    background: url('../img/main_image.jpeg') no-repeat scroll center;
+    background-size: cover;
+    height: 70vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+section.mainimg h2 {
+    color: #FEC300;
+    font-size: 2.8em; 
+    font-family: 'mnglwritingotf', serif ;
+    line-height: 1;
+    position: relative;
+    top: 50%;
+}
+.mainimg h2 span {
+    color: #48A9DB; }
+
+@media (max-width:750px) {
+    .mainimg h2{
+    font-size:2em !important;}
+}
+
+/*--- end style for main image---*/
+
+/*--- start style for get in touch and information section---*/
+.get_in_touch, .information {
+    width: 80vw;
+    margin: auto;
+}
+ .get_in_touch h2, .information h2 {
+    margin: 5vw 10vw 4vw 6vw ;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #FEC300;
+    font-size: 2.4em;
+    font-family: 'mnglwritingotf', serif ;
+}
+
+form input:first-of-type,
+input:nth-of-type(2),
+form textarea {
+    display: block;
+    width: 60vw;
+    height: 40px;
+    margin: 2.5vw auto;
+    border: 2px solid #86BCDF;
+    border-radius: 15px;
+    padding-left: 15px;
+    font-size:16px;
+}
+form textarea {
+    height: 175px;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: inherit;
+}
+form input:last-of-type {
+    width: 20vw;
+    height: 5vw;
+    margin: 2.2vw 0px 5vw 30vw;
+    border: 1px solid #FFF;
+    border-radius: 2vw;
+    background: #46AFE5;
+    color: #FFF;
+    font-size:16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width:750px) {
+    .get_in_touch h2, .information h2 {
+        font-size: 30px;
+        text-align: center;
+        margin: 5vw 0 ;
+    }
+}
+
+@media (max-width:400px) {
+    .get_in_touch h2, .information h2 {
+        font-size: 25px;
+    }
+    form input:first-of-type,
+    input:nth-of-type(2) {
+        width: 80vw;
+        height: 40px;
+        margin: 2.5vw auto;
+        padding-left: 5px;
+}
+    form textarea {
+        width: 80vw;
+        text-align: center;
+    }
+    form input:last-of-type {
+        width: 26vw;
+        height: 8vw;
+    }
+}
+
+/*--- start style for get in touch and information section---*/
+
+/*--- start style for information section---*/
+.information section p
+{
+    text-transform: capitalize
+}
+
+.information section a, 
+.information section p
+{
+    display: block;
+    margin: 2vw auto auto 10vw;
+    padding: 5px;
+    color: #48A9DB;
+    font-weight: bold;
+    font-size: 20px;
+}
+section iframe
+{
+    width: 60vw;
+    height: 50vh;
+    display: block;
+    margin: 4vw auto;
+}
+
+@media (max-width:750px){
+    .information section a, 
+    .information section p
+    {
+        font-size: 1em;
+        text-align: center;
+    }
+    section iframe {
+    width: 80vw;
+    margin: 4vw auto;
+    }
+}
+
+@media (max-width:485px) {
+    .information section a, 
+    .information section p {
+        margin: 10px 0 ;
+        padding: 0;
+    }
+}
+
+/*--- start style for information section---*/

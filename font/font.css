@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'mnglwritingotf';
+	src: url('./mnglwritingotf.eot');
+	src: local('mnglwritingotf'), url('./mnglwritingotf.woff') format('woff'), url('./mnglwritingotf.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_38559">Text with this font applied</p> */
+.fontsforweb_fontid_38559 {
+	font-family: 'mnglwritingotf' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

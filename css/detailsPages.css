@@ -1,0 +1,227 @@
+/*--Img slider section--*/
+section.image-slider {
+    margin-top: 50px;}
+
+section.image-slider, #slider, .warp, .slide-content {
+    font-family: 'mnglwritingotf', serif ;
+    width:100%;
+    font-size:10vw;
+    height: 70vh;
+    overflow-x: hidden;
+}
+#slider, .warp, .slide-content {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    position: relative;
+}
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 90%;
+    color:#fff;
+    text-shadow: 3px 2px rgba(0, 0, 0,0.6);
+}
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    margin-top: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+#arrow-left {
+    border-width: 2vw 2.5vw 2vw 0;
+    border-color: transparent rgba(255, 255, 255,0.6) transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+#arrow-right {
+    border-width: 2vw 0 2vw 2.5vw;
+    border-color: transparent transparent transparent rgba(255, 255, 255,0.6);
+    right: 0;
+    margin-right: 30px;
+}
+
+@media (max-width:750px) {
+    #arrow-left {
+        border-width: 4vw 4.5vw 4vw 0;}
+    #arrow-right {
+        border-width: 4vw 0 4vw 4.5vw;}
+}
+/*--INTRODUCTION--*/
+.intro ,.int {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.intro h2, .int h2 {
+    color:#fec300;
+    font-size: 38px;
+}
+.intro h3, #accordion h3,
+.inclu h3 {
+    color:#366a7f;
+    font-size:30px;
+    display: inline-block;  
+}
+.intro p,#accordion div p {
+    color:#366a7f;
+    text-indent:2.5%;
+    font-size: 20px;
+    font-family: "arial";
+    line-height: 150%;   
+}
+#accordion div {
+    padding: 2%;}
+
+#accordion h3::before {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 free" ;
+    position: relative;
+    line-height: 50px;
+    color: rgb(151,204,255);
+    right: 5px;
+    font-weight: bold;
+}
+
+.priceTime {
+    text-align: center;}
+
+#cost > i, #duration > i {
+    color: #fec300 ;
+    font-size: 35px;
+}
+#accordion h3 {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-top:2% #82bcda solid;
+    display: block;
+}
+#accordion h3:first-child {
+    border-top:none;}
+.inclu, .Ninclu {
+    margin: 0;
+    padding: 0;
+    line-height: 20%;
+}
+
+div.row.inclu > div > h3 > i ,
+div.row.Ninclu > div > h3 > i{
+    color: rgb(151,204,255) ;
+}
+
+@media (max-width:750px) {
+    .intro h2, .int h2 {
+        font-size: 25px;}
+    .intro h3, #accordion h3,
+    .inclu h3 {
+        font-size: 20px;}
+    .intro p,#accordion div p {
+        font-size: 16px;}
+    #cost > i, #duration > i {
+        font-size: 25px;}
+}
+
+/*--download the tour section--*/
+.download-tour {
+    margin: 0;
+}
+.download {
+    margin-bottom: 5%;}
+
+/*--Book the tour--*/
+.booking {
+    background-color:rgba(130, 188, 218,.25);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-top:1%;
+}
+.booking h1 {
+    color:#82bcda;
+    font-family: 'mnglwritingotf', serif ;
+    text-align: center;
+    font-size: 38px;
+}
+.booking-cont {
+    padding-left: 10%;
+    padding-right:  10%;
+}
+.booking-cont label {
+    color:#366a7f;
+    font-size: 20px; 
+    font-weight:600;
+    margin-left: 20% ;
+}
+.booking-cont input {
+    height: 2em;
+    line-height: 0.5em;
+    width: 40%;
+    border-radius: 10px;
+    display: block;
+    font-size: 1em;
+}
+.booking .btn {
+    font-weight: 60;
+    padding: 1vh 5vw;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.booking .row {
+    display:block;
+    line-height: .5;
+}
+
+.booking-cont output {
+    font:16px Arial;
+    padding: 1% 20% 2% 5px;
+    border: .5px solid #908787;
+    background-color: #fff;
+    border-radius: 10px;
+}
+i.fa-dollar-sign {
+    font-size: 25px;
+    margin-left: 10px;
+    color: #366a7f;
+}
+/*-- mobile and tablet version-- */
+@media (max-width:750px) {
+    .booking h1 {
+        font-size: 30px;
+    }
+    .span-1-of-3 ,.booking-cont,.span-2-of-3 {  
+        width: 100%; 
+        text-align: center;
+        padding: 0;
+    }
+    .booking-cont label {
+        margin: 10px 10px;
+        padding: 20px 20px;
+        font: 16px;
+    } 
+    .booking-cont input {
+        margin: 10px auto;
+        width: 50%;
+    }
+    .booking .btn {
+        margin: 10px;
+    }
+    #out-put {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
